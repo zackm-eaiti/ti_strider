@@ -1,0 +1,17 @@
+---
+description: Pipeline for processing threat indicators
+
+processors:
+    - set:
+        field: "@timestamp"
+        value: "{{ _ingest.timestamp }}"
+    - set:
+        field: ecs.version
+        value: "8.0.0"
+    - set: 
+        field: input.type
+        value: cel
+on_failure:
+    - set:
+        field: error.message
+        value: '{{ _ingest.on_failure_message }}'

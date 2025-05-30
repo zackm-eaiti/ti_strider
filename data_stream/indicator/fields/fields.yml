@@ -1,0 +1,121 @@
+- name: data_stream.type
+  type: constant_keyword
+  description: Data stream type.
+
+- name: data_stream.dataset
+  type: constant_keyword
+  description: Data stream dataset.
+
+- name: data_stream.namespace
+  type: constant_keyword
+  description: Data stream namespace.
+
+- name: '@timestamp'
+  type: date
+  description: Event timestamp.
+
+- name: ecs.version
+  type: keyword
+  description: ECS version the event conforms to.
+
+- name: input.type
+  type: keyword
+  description: The type of data we are ingesting
+
+- name: data
+  type: group
+  description: Decoded API response from base64
+  fields:
+
+    - name: riskSignals
+      type: group
+      fields:
+        - name: riskSignal
+          type: keyword
+        - name: riskSignalsCount
+          type: long
+
+    - name: emailDomainsCount
+      type: long
+
+    - name: termsCount
+      type: long
+
+    - name: emailAddressesCount
+      type: long
+
+    - name: emailAddresses
+      type: group
+      fields:
+        - name: isNew
+          type: long
+        - name: md5
+          type: keyword
+        - name: itemType
+          type: keyword
+        - name: itemNamePrimary
+          type: keyword
+        - name: riskSignal
+          type: keyword
+        - name: dates_added
+          type: keyword
+        - name: itemNameSecondary
+          type: keyword
+        - name: changes
+          type: keyword
+
+    - name: emailDomains
+      type: group
+      fields:
+        - name: isNew
+          type: long
+        - name: md5
+          type: keyword
+        - name: itemType
+          type: keyword
+        - name: itemNamePrimary
+          type: keyword
+        - name: riskSignal
+          type: keyword
+        - name: dates_added
+          type: keyword
+        - name: itemNameSecondary
+          type: keyword
+        - name: changes
+          type: keyword
+
+    - name: terms
+      type: group
+      fields:
+        - name: isNew
+          type: long
+        - name: md5
+          type: keyword
+        - name: itemType
+          type: keyword
+        - name: itemNamePrimary
+          type: keyword
+        - name: riskSignal
+          type: keyword
+        - name: dates_added
+          type: keyword
+        - name: itemNameSecondary
+          type: keyword
+        - name: changes
+          type: keyword
+
+    - name: riskSignalsDefinitions
+      type: group
+      fields:
+        - name: risk_category_abbr
+          type: keyword
+        - name: risk_category_name
+          type: keyword
+        - name: risk_category_description
+          type: keyword
+        - name: risk_category_email
+          type: keyword
+        - name: risk_category_domain
+          type: keyword
+        - name: risk_category_term
+          type: keyword

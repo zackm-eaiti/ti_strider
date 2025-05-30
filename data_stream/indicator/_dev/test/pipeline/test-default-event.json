@@ -1,0 +1,61 @@
+{
+	"events": [
+		{
+			"riskSignals": [
+				{
+					"riskSignal": "",
+					"riskSignalsCount": 0
+				}
+			],
+			"emailDomainsCount": 0,
+			"termsCount": 0,
+			"emailAddressesCount": 0,
+			"emailAddresses": [
+				{
+					"isNew": 0,
+					"md5": "",
+					"itemType": "",
+					"itemNamePrimary": "",
+					"riskSignal": "",
+					"dates_added": "",
+					"itemNameSecondary": "[]",
+					"changes": "{}"
+				}
+			],
+			"emailDomains": [
+				{
+					"isNew": 0,
+					"md5": "",
+					"itemType": "",
+					"itemNamePrimary": "",
+					"riskSignal": "",
+					"dates_added": "",
+					"itemNameSecondary": "[]",
+					"changes": "{}"
+				}
+			],
+			"terms": [
+				{
+					"isNew": 0,
+					"md5": "",
+					"itemType": "",
+					"itemNamePrimary": "",
+					"riskSignal": "",
+					"dates_added": "",
+					"itemNameSecondary": "[]",
+					"changes": "{}"
+				}
+			],
+			"riskSignalsDefinitions": [
+				{
+					"risk_category_abbr": "",
+					"risk_category_name": "",
+					"risk_category_description": "",
+					"risk_category_email": "",
+					"risk_category_domain ": "",
+					"risk_category_term": ""
+				}
+			]
+		}
+	]
+}

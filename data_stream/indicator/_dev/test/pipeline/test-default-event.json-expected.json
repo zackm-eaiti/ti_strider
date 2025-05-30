@@ -1,0 +1,66 @@
+{
+    "expected": [
+        {
+            "@timestamp": "2025-05-28T18:43:30.702438716Z",
+            "debug": "{emailAddressesCount=0, emailAddresses=[{itemNamePrimary=, itemType=, riskSignal=, itemNameSecondary=[], dates_added=, changes={}, isNew=0, md5=}], emailDomainsCount=0, terms=[{itemNamePrimary=, itemType=, riskSignal=, itemNameSecondary=[], dates_added=, changes={}, isNew=0, md5=}], emailDomains=[{itemNamePrimary=, itemType=, riskSignal=, itemNameSecondary=[], dates_added=, changes={}, isNew=0, md5=}], riskSignalsDefinitions=[{risk_category_email=, risk_category_name=, risk_category_term=, risk_category_abbr=, risk_category_domain =, risk_category_description=}], termsCount=0, riskSignals=[{riskSignalsCount=0, riskSignal=}], _index=logs-ti_strider.indicator-default, _id=_id, _version=-3}",
+            "ecs": {
+                "version": "8.0.0"
+            },
+            "emailAddresses": [
+                {
+                    "changes": "{}",
+                    "dates_added": "",
+                    "isNew": 0,
+                    "itemNamePrimary": "",
+                    "itemNameSecondary": "[]",
+                    "itemType": "",
+                    "md5": "",
+                    "riskSignal": ""
+                }
+            ],
+            "emailAddressesCount": 0,
+            "emailDomains": [
+                {
+                    "changes": "{}",
+                    "dates_added": "",
+                    "isNew": 0,
+                    "itemNamePrimary": "",
+                    "itemNameSecondary": "[]",
+                    "itemType": "",
+                    "md5": "",
+                    "riskSignal": ""
+                }
+            ],
+            "emailDomainsCount": 0,
+            "riskSignals": [
+                {
+                    "riskSignal": "",
+                    "riskSignalsCount": 0
+                }
+            ],
+            "riskSignalsDefinitions": [
+                {
+                    "risk_category_abbr": "",
+                    "risk_category_description": "",
+                    "risk_category_domain ": "",
+                    "risk_category_email": "",
+                    "risk_category_name": "",
+                    "risk_category_term": ""
+                }
+            ],
+            "terms": [
+                {
+                    "changes": "{}",
+                    "dates_added": "",
+                    "isNew": 0,
+                    "itemNamePrimary": "",
+                    "itemNameSecondary": "[]",
+                    "itemType": "",
+                    "md5": "",
+                    "riskSignal": ""
+                }
+            ],
+            "termsCount": 0
+        }
+    ]
+}
